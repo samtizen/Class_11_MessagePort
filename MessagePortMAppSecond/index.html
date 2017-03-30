@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="Tizen Mobile Web Basic Template" />
+
+    <title>Tizen Mobile Web Basic Application</title>
+    <link rel="stylesheet" href="lib/tau/mobile/theme/default/tau.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/message_port_style.css" />
+</head>
+
+<body>
+    <div class="ui-page ui-page-active" id="bluetooth-viewer-main">
+        <div class="ui-header">
+            <h1>Message Port App 2</h1>
+        </div>
+        <div class="ui-content">
+        	<label>Your Name</label>
+			<input type="text" id="txt-name">
+			<label>Message</label>
+			<textarea id="txt-message" rows="3" cols="43"></textarea>
+			<label>Protocol</label>
+			<div id="message-list">
+			</div>
+        </div>
+        <div id="bluetooth-server-footer" class="ui-footer" style="background-color:rgba(46, 139, 153, 1)">
+        	<div class="row-grid">
+                <div class="col-grid-3" style="text-align:center">
+                    <a href="#" class="icon-init icon-active" id="btn-init-remote-port"></a>
+                    <div class="ui-footer-btn-text" style="margin-top:-5px;">Init</div>
+                </div>
+                <div class="col-grid-3" style="text-align:center;">
+                    <a href="#" class="icon-send icon-active" id="btn-send-message"></a>
+                    <div class="ui-footer-btn-text" style="margin-top:-5px;">Send</div>
+                </div>
+                <div class="col-grid-3" style="text-align:center;">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="lib/tau/mobile/js/tau.js"></script>
+    <script type="text/javascript" src="lib/jquery.js"></script>
+    <script type="text/javascript" src="js/message_port_view_prot.js"></script>
+    <script type="text/javascript" src="js/message_port_tizen_prot.js"></script>
+    <script type="text/javascript" src="js/message_port_main.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
